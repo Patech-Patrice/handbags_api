@@ -15,14 +15,14 @@ ActiveRecord::Schema.define(version: 2019_10_09_152316) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "handbags", force: :cascade do |t|
-    t.string "body"
+  create_table "collectors", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "name"
+  create_table "handbags", force: :cascade do |t|
+    t.string "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
